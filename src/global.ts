@@ -14,3 +14,8 @@ export const Container = styled.div`
     max-width: 1080px;
     margin: 0 auto;
 `
+
+export const ContainerGray = styled.div`
+    margin-top: 100px;
+    background-color: #EFF1F5;
+`

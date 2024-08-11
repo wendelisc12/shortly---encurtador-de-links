@@ -4,12 +4,13 @@ export type props = {
     children:string,
     width?:number,
     height?:number,
-    radius?:number
+    radius?:number,
+    onClick?: () => void
 }
 
-const Button = ({children, width, height, radius}:props) => {
+const Button = ({children, width, height, radius, onClick}:props) => {
     return ( 
-        <ButtonStyle width={width} height={height} radius={radius}>{children}</ButtonStyle>
+        <ButtonStyle width={width} height={height} radius={radius} onClick={onClick}>{children}</ButtonStyle>
      );
 }
  
