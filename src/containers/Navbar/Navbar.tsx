@@ -10,15 +10,15 @@ const Navbar = () => {
                     <img src="./logo.svg" alt="" />
                     <Links>
                         <TextLink>Features</TextLink>
-                        <TextLink>Preços</TextLink>
-                        <TextLink>Recursos</TextLink>
+                        <TextLink>Pricing</TextLink>
+                        <TextLink>Resources</TextLink>
                     </Links>
                 </ContainerSeparacao>
                 
                 <ContainerSeparacao>
                     <Links>
                         <TextLink>Login</TextLink>
-                        <Button>Registrar</Button>
+                        <Button>Sign Up</Button>
                     </Links>
                 </ContainerSeparacao>
             </Nav>

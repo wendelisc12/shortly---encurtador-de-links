@@ -1,6 +1,14 @@
-const Title = () => {
+import { ReactNode } from "react";
+import { TitleStyle } from "./style";
+
+export type props = {
+    children: ReactNode,
+    size?:string
+}
+
+const Title = ({children}:props) => {
     return ( 
-        <h1>oi</h1>
+        <TitleStyle>{children}</TitleStyle>
      );
 }
  

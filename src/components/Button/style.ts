@@ -14,6 +14,6 @@ export const ButtonStyle = styled.button<props>`
     transition: all 300ms;
 
     &:hover{
-        filter: brightness(0.9);
+        filter: saturate(1.5);
     }
 `

@@ -1,3 +1,4 @@
+import Hero from "./containers/Hero/hero"
 import Navbar from "./containers/Navbar/Navbar"
 import {Container, GlobalStyle} from "./global"
 
@@ -8,7 +9,7 @@ function App() {
       <GlobalStyle />
       <Container>
         <Navbar />
-
+        <Hero />
       </Container>
     </>
   )
