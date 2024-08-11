@@ -1,12 +1,13 @@
 import { Link } from "./style";
 
-type props ={
-    children:string
+export type props ={
+    children:string,
+    light?:boolean
 }
 
-const TextLink = ({children}:props) => {
+const TextLink = ({children, light}:props) => {
     return ( 
-        <Link href="#">{children}</Link>
+        <Link href="#" light={light}>{children}</Link>
      );
 }
  

@@ -20,3 +20,7 @@ export const ContainerGray = styled.div`
     padding-bottom: 100px;
     background-color: #EFF1F5;
 `
+
+export const ContainerFooter = styled.footer`
+    background-color: hsl(260, 8%, 14%);
+`
