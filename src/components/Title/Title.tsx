@@ -3,12 +3,13 @@ import { TitleStyle } from "./style";
 
 export type props = {
     children: ReactNode,
-    size?:number
+    size?:number,
+    light?:boolean
 }
 
-const Title = ({children, size}:props) => {
+const Title = ({children, size, light}:props) => {
     return ( 
-        <TitleStyle size={size}>{children}</TitleStyle>
+        <TitleStyle size={size} light={light}>{children}</TitleStyle>
      );
 }
  
