@@ -17,5 +17,6 @@ export const Container = styled.div`
 
 export const ContainerGray = styled.div`
     margin-top: 100px;
+    padding-bottom: 100px;
     background-color: #EFF1F5;
 `

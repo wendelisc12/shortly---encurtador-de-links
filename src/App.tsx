@@ -1,6 +1,8 @@
 import ShortInput from "./components/ShortInput/ShortInput"
 import Hero from "./containers/Hero/hero"
 import Navbar from "./containers/Navbar/Navbar"
+import ShortenLinksList from "./containers/ShortenLinksList/ShortenLinksList"
+import Statistics from "./containers/Statistics/Statistics"
 import {Container, ContainerGray, GlobalStyle} from "./global"
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <ContainerGray>
         <Container>
           <ShortInput />
+          <ShortenLinksList/>
+          <Statistics/>
         </Container>
       </ContainerGray>
     </>
