@@ -1,12 +1,13 @@
 import { TextStyle } from "./style";
 
-type props = {
-    children:string
+export type props = {
+    children:string,
+    responsiveSize?:number
 }
 
-const Text = ({children}:props) => {
+const Text = ({children, responsiveSize}:props) => {
     return ( 
-        <TextStyle>{children}</TextStyle>
+        <TextStyle responsiveSize={responsiveSize}>{children}</TextStyle>
      );
 }
  

@@ -5,8 +5,8 @@ import { BoostContainer } from "./style";
 const Boost = () => {
     return ( 
        <BoostContainer>
-            <Title size={2} light>Boost your links today</Title>
-            <Button width={170}>Get Started</Button>
+            <Title size={2} responsiveSize={1.8} light>Boost your links today</Title>
+            <Button width={170} responsiveHeight={50} responsiveFontSize={18} responsiveWidth={200}>Get Started</Button>
        </BoostContainer>
      );
 }

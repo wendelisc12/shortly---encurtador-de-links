@@ -18,4 +18,10 @@ export const ButtonStyle = styled.button<props>`
     &:hover{
         filter: saturate(1.5);
     }
+
+    @media (max-width: 767px){
+        width: ${props=>props.responsiveWidth ? props.responsiveWidth + 'px' : props.responsiveWidthPercent ? '100%' : props.width};
+        height: ${props=>props.responsiveHeight ? props.responsiveHeight + 'px' : props.height};
+        font-size: ${props=> props.responsiveFontSize + 'px'};
+    }
 `

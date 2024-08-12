@@ -7,6 +7,10 @@ type prop ={
 export const Container = styled.div`
     position: relative;
     height: 60px;
+
+    @media (max-width: 767px){
+        margin-bottom: 40px;
+    }
 `
 
 export const FloatContainer = styled.div`
@@ -21,6 +25,15 @@ export const FloatContainer = styled.div`
     gap: 15px;
     position: absolute;
     top: -60px;
+    
+    @media (max-width: 767px){
+        top: -80px;
+        padding: 0 20px;
+        height: 160px;
+        gap: 20px;
+        flex-direction: column;
+        background: url('./bg-shorten-mobile.svg')  hsl(257, 27%, 26%) right no-repeat;
+    }
 `
 
 export const InputContainer = styled.div`

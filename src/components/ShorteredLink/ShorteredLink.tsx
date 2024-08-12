@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {ButtonCopy, ContainerShortered, LinkShorted, ContainerCopyLink} from './style'
+import {ButtonCopy, ContainerShortered, LinkShorted, ContainerCopyLink, Horizontaline, OriginalLink} from './style'
 
 type props ={
     linkOriginal:string,
@@ -19,10 +19,11 @@ const ShorteredLink = ({linkOriginal, linkShort}:props) => {
 
     return ( 
         <ContainerShortered>
-            <p>{linkOriginal}</p>
+            <OriginalLink>{linkOriginal}</OriginalLink>
+            <Horizontaline></Horizontaline>
             <ContainerCopyLink>
                 <LinkShorted href={linkShort}>{linkShort}</LinkShorted>
-                <ButtonCopy radius={10} clicked={clicked} onClick={copyLink}> </ButtonCopy>
+                <ButtonCopy responsiveWidthPercent radius={10} clicked={clicked} onClick={copyLink}> </ButtonCopy>
             </ContainerCopyLink>
         </ContainerShortered>
      );

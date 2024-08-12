@@ -7,11 +7,22 @@ export const StatitisContainer = styled.div`
     background-color: white;
     z-index: 100;
     border-radius: 10px;
+    
+    @media (max-width: 767px){
+        text-align: center;
+    }
 `
 
 export const FloatingImage = styled.div`
     position: relative;
     height: 30px;
+
+    @media (max-width: 767px){
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 `
 
 export const ImageBox = styled.div`
@@ -24,4 +35,23 @@ export const ImageBox = styled.div`
     justify-content: center;
     position: absolute;
     top: -30px;
+
+    @media (max-width: 767px){
+        width: 90px;
+        height: 90px;
+        top: -45px;
+    }
+`
+
+type propsImg = {
+    widthIcon:number,
+    responsiveWidth:number
+}
+
+export const Icon = styled.img<propsImg>`
+    width: ${props => props.widthIcon + 'px'};
+
+    @media (max-width: 767px){
+        width: ${props => props.responsiveWidth + 'px'};
+    }
 `

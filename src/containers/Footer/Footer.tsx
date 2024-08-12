@@ -9,26 +9,26 @@ const Footer = () => {
             </div>
             <LinksContainer>
                 <ColumLink>
-                    <TextLink light>Features</TextLink>
+                    <TextLink  responsiveSize={20} light>Features</TextLink>
                     <br />
-                    <TextLink>Link Shortening</TextLink>
-                    <TextLink>Branded Links</TextLink>
-                    <TextLink>Analytics</TextLink>
+                    <TextLink  responsiveSize={20}>Link Shortening</TextLink>
+                    <TextLink  responsiveSize={20}>Branded Links</TextLink>
+                    <TextLink  responsiveSize={20}>Analytics</TextLink>
                 </ColumLink>
                 <ColumLink>
-                    <TextLink light>Resources</TextLink>
+                    <TextLink  responsiveSize={20} light>Resources</TextLink>
                     <br />
-                    <TextLink>Blog</TextLink>
-                    <TextLink>Developers</TextLink>
-                    <TextLink>Support</TextLink>
+                    <TextLink  responsiveSize={20}>Blog</TextLink>
+                    <TextLink  responsiveSize={20}>Developers</TextLink>
+                    <TextLink  responsiveSize={20}>Support</TextLink>
                 </ColumLink>
                 <ColumLink>
-                    <TextLink light>Company</TextLink>
+                    <TextLink  responsiveSize={20} light>Company</TextLink>
                     <br />
-                    <TextLink>About</TextLink>
-                    <TextLink>Our Team</TextLink>
-                    <TextLink>Careers</TextLink>
-                    <TextLink>Contact</TextLink>
+                    <TextLink  responsiveSize={20}>About</TextLink>
+                    <TextLink  responsiveSize={20}>Our Team</TextLink>
+                    <TextLink  responsiveSize={20}>Careers</TextLink>
+                    <TextLink  responsiveSize={20}>Contact</TextLink>
                 </ColumLink>
             </LinksContainer>
 

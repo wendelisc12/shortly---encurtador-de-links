@@ -26,6 +26,7 @@ const ShortInput = () => {
                 
                 if(tinyUrl){
                     dispatch(adicionarLinks({linkOrigin: url.toString(), linkEncurtado: tinyUrl.toString()})) 
+                    setLink('')
                 }else{
                     alert("ocorreu um erro ao encurtar o link")
                 }
@@ -43,10 +44,10 @@ const ShortInput = () => {
             <Container>
                 <FloatContainer>
                     <InputContainer>
-                        <Input type="text" placeholder="Shorten a link here" erro={erro} onFocus={()=>{setErro('')}} onChange={e => setLink(e.target.value)}/>
+                        <Input type="text" placeholder="Shorten a link here" erro={erro} value={link} onFocus={()=>{setErro('')}} onChange={e => setLink(e.target.value)}/>
                         <ErrorText>{erro === 'invalido' ? 'Please add a valid link' : erro === 'vazio' ? 'please add a link' : ''}</ErrorText>
                     </InputContainer>
-                    <Button radius={10} width={170} height={50} onClick={handleLink}>{isLoading ? <PulseLoader color="#fff" size={10}/> : 'Shorten it!'}</Button>
+                    <Button radius={10} responsiveFontSize={18} width={170} responsiveWidth={330} height={50} onClick={handleLink}>{isLoading ? <PulseLoader color="#fff" size={10}/> : 'Shorten it!'}</Button>
                 </FloatContainer>
             </Container>
         </>

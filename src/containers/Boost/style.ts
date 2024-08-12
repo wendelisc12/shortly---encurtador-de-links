@@ -9,4 +9,9 @@ export const BoostContainer = styled.div`
     padding: 40px 0;
     background: url('./bg-boost-desktop.svg') center no-repeat hsl(257, 27%, 26%);
     background-size: cover;
+
+    @media (max-width: 767px){
+        background: url('./bg-boost-mobile.svg') right no-repeat hsl(257, 27%, 26%);
+        gap: 15px;
+    }
 `

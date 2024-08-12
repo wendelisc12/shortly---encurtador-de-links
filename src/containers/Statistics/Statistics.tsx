@@ -7,7 +7,7 @@ const Statistics = () => {
     return ( 
         <SectionStatistics>
             <HeaderStatistics>
-                <Title size={2}>Advanced Statistics</Title>
+                <Title size={2} responsiveSize={1.8}>Advanced Statistics</Title>
                 <Text>Track how your links are performing across the web with our advanced statistics dashboard.</Text>
             </HeaderStatistics>
 
