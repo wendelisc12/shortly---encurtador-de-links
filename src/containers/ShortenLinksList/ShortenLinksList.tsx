@@ -1,9 +1,17 @@
+import { useSelector } from "react-redux";
 import ShorteredLink from "../../components/ShorteredLink/ShorteredLink";
+import { RootReducer } from "../../store/store";
 
 const ShortenLinksList = () => {
+    const dados = useSelector((state:RootReducer) => state.Link)
+    
     return ( 
         <div>
-            <ShorteredLink linkShort="https://relink/gxOXp9" linkOriginal="ww"/>
+            {
+                dados.map((links)=>(
+                    <ShorteredLink linkShort={links.linkEncurtado} linkOriginal={links.linkOrigin}/>
+                ))
+            }
         </div>
      );
 }
