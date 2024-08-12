@@ -21,7 +21,9 @@ export const ContainerShortered = styled.div`
     }
 `
 
-export const OriginalLink = styled.p`
+export const OriginalLink = styled.div`
+    display: flex;
+    align-items: flex-start;
     @media (max-width: 767px){
         padding: 15px;
     }

@@ -19,7 +19,7 @@ const ShorteredLink = ({linkOriginal, linkShort}:props) => {
 
     return ( 
         <ContainerShortered>
-            <OriginalLink>{linkOriginal}</OriginalLink>
+            <OriginalLink><p>{linkOriginal}</p></OriginalLink>
             <Horizontaline></Horizontaline>
             <ContainerCopyLink>
                 <LinkShorted href={linkShort}>{linkShort}</LinkShorted>
