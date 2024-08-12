@@ -1,7 +1,8 @@
+import { ReactNode } from "react";
 import { ButtonStyle } from "./style";
 
 export type props = {
-    children:string,
+    children: ReactNode,
     width?:number,
     height?:number,
     radius?:number,

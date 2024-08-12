@@ -7,5 +7,6 @@ export const BoostContainer = styled.div`
     justify-content: center;
     text-align: center;
     padding: 40px 0;
-    background: url('./bg-boost-desktop.svg') hsl(257, 27%, 26%)
+    background: url('./bg-boost-desktop.svg') center no-repeat hsl(257, 27%, 26%);
+    background-size: cover;
 `

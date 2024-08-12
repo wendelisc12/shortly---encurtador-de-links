@@ -12,7 +12,9 @@ export const ButtonStyle = styled.button<props>`
     border-radius: ${(props) => props.radius ? props.radius + 'px' : '40px'};
     font-size: 15px;
     transition: all 300ms;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover{
         filter: saturate(1.5);
     }

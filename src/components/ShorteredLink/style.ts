@@ -18,10 +18,14 @@ export const ContainerShortered = styled.div`
 export const LinkShorted = styled.a`
     color: hsl(180, 66%, 49%);
     text-decoration: none;
-
     &:hover{
         text-decoration: underline;
     }
+`
+
+export const ContainerCopyLink = styled.div`
+    display: flex;
+    align-items: center;
 `
 
 export const ButtonCopy = styled(ButtonStyle)<propsButton>`
